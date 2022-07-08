@@ -1,0 +1,1 @@
+{"uuid":"dfdde83f-4178-4a6b-b91e-64128f6e6f7b","name":"getAShipTest()","children":["ada440b6-bb4a-4dfe-aec1-854d8f1caed1"],"befores":[{"name":"before","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657292873372,"stop":1657292873372}],"afters":[],"start":1657292873371,"stop":1657292873792}
