@@ -1,1 +1,0 @@
-{"uuid":"7dbeaf50-baa0-44b6-a91d-43981a5ed933","name":"getCompanyData_checkCeo_shouldBeElonMusk()","children":["1b6c4410-cc45-476f-9520-5e0f7f5d9741"],"befores":[{"name":"before","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657293416755,"stop":1657293416758}],"afters":[],"start":1657293416540,"stop":1657293418635}

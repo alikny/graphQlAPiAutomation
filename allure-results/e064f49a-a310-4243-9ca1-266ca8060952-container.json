@@ -1,1 +1,0 @@
-{"uuid":"e064f49a-a310-4243-9ca1-266ca8060952","name":"testWithParameterPOJOClass()","children":["a8eefacf-2e29-4639-bdd1-06f0810f2ce3"],"befores":[{"name":"before","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657292873795,"stop":1657292873795}],"afters":[],"start":1657292873794,"stop":1657292874223}
