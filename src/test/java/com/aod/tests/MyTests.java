@@ -25,7 +25,7 @@ public class MyTests {
         Endpoint= ConfigurationReader.get("EndPoint");
     }
 
-//    @Tag("smoke")
+    @Tag("smoke")
     @org.junit.jupiter.api.Test
     public void getCompanyData_checkCeo_shouldBeElonMusk() {
 
@@ -72,7 +72,7 @@ public class MyTests {
                                     .body("data.launches[0].mission_name",is(notNullValue()));
 
     }
-
+    @Tag("smoke")
     @Test
     public void testWithParameterJSONObject() throws JSONException {
         GraphQLQuery query=new GraphQLQuery();
