@@ -2,3 +2,5 @@
 /target
 
 /allure-results/*
+/.allure/
+/allure-results
