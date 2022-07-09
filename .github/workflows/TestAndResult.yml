@@ -5,15 +5,14 @@ name: Api test Automation
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "junit-report" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "junit-report" ]
 
 jobs:
   AoD-API-Automation-Tests:
 
     runs-on: ubuntu-latest
-
 
     steps:
       - uses: actions/checkout@v3
