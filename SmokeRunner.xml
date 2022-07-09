@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Api Automation" verbose="1">
+    <test name="Smoke Test">
+        <packages name="com.aod.tests"></packages>
+        <classes>
+            <class name="com.aod.tests.UserTests"></class>
+            <class name="com.aod.tests.MyTests"></class>
+        </classes>
+
+    </test>
+</suite>

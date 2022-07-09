@@ -6,27 +6,28 @@ import com.aod.data.User;
 import com.aod.pojos.GraphQLQuery;
 import com.aod.pojos.QueryLimits;
 import com.aod.utilities.ConfigurationReader;
+import io.qameta.allure.*;
 import io.restassured.http.ContentType;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
-
+@Feature("User modification")
 public class MyTests {
     String Endpoint;
 
-    @BeforeEach
+    @BeforeTest
     public void before(){
         Endpoint= ConfigurationReader.get("EndPoint");
     }
 
-//    @Tag("smoke")
-    @org.junit.jupiter.api.Test
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Verify that user is correct")
+    @Test
     public void getCompanyData_checkCeo_shouldBeElonMusk() {
 
         GraphQLQuery qlquery=new GraphQLQuery();
@@ -47,7 +48,6 @@ public class MyTests {
                 ;
     }
 
-    @Tag("smoke")
     @Test
     public void testWithParameterPOJOClass(){
         GraphQLQuery query=new GraphQLQuery();
@@ -123,7 +123,6 @@ public class MyTests {
 
     }
 
-//    @Tag("regression")
     @Test
     public void getAShipTest(){
         GraphQLQuery qlQuery=new GraphQLQuery();
