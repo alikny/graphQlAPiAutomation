@@ -42,7 +42,7 @@ public class MyTests {
                     assertThat().
                     statusCode(200).
                 and().
-                    body("data.company.ceo", equalTo("Elon Musk"))
+                    body("data.company.ceo", equalTo("Elon Musks"))
 //                .and().log().all()
                 ;
     }
