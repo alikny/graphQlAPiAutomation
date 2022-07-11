@@ -29,6 +29,13 @@ jobs:
         if: always()
         with:
           files: "target/surefire-reports/*.xml"
+      - name: Test Report test-reporter
+        uses: dorny/test-reporter@v1
+        if: success() || failure()    # run this step even if previous step failed
+        with:
+          name: JEST Tests            # Name of the check run which will be created
+          path: target/surefire-reports/*.xml    # Path to test results
+          reporter: jest-junit        # Format of test results
 #      - name: Notify slack
 #        env:
 #          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
