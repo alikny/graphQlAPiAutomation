@@ -24,13 +24,18 @@ jobs:
           cache: maven
       - name: Run tests with Maven
         run: mvn clean test
-      - name: Test Report test-reporter
-        uses: dorny/test-reporter@v1
+      - name: Test Report
+        uses: phoenix-actions/test-reporting@v8
+        id: test-report               # Set ID reference for step
         if: success() || failure()    # run this step even if previous step failed
         with:
           name: JEST Tests            # Name of the check run which will be created
           path: target/surefire-reports/*.xml    # Path to test results
           reporter: jest-junit        # Format of test results
+
+      - name: Read output variables
+        run: |
+          echo "url is ${{ steps.test-report.outputs.runHtmlUrl }}"
 #      - name: Notify slack
 #        env:
 #          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
