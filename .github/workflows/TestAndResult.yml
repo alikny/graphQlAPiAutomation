@@ -29,9 +29,9 @@ jobs:
         if: always()
         with:
           files: "target/surefire-reports/*.xml"
-        - name: Post Slack message
-          uses: joshmgross/send-slack-message@main
-          with:
-            message: 'Hello world'
-            channel: ${{ secrets.SLACK_CHANNEL_ID }}
-            slack-token: ${{ secrets.SLACK_BOT_TOKEN }}
+      - name: Post Slack message
+        uses: joshmgross/send-slack-message@main
+        with:
+          message: 'Hello world'
+          channel: ${{ secrets.SLACK_CHANNEL_ID }}
+          slack-token: ${{ secrets.SLACK_BOT_TOKEN }}
