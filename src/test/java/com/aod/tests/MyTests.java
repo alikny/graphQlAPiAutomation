@@ -9,10 +9,8 @@ import com.aod.utilities.ConfigurationReader;
 import io.restassured.http.ContentType;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
-
+import org.junit.Before;
+import org.junit.Test;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
@@ -20,13 +18,12 @@ import static org.hamcrest.Matchers.*;
 public class MyTests {
     String Endpoint;
 
-    @BeforeEach
+    @Before
     public void before(){
         Endpoint= ConfigurationReader.get("EndPoint");
     }
 
-    @Tag("smoke")
-    @org.junit.jupiter.api.Test
+    @Test
     public void getCompanyData_checkCeo_shouldBeElonMusk() {
 
         GraphQLQuery qlquery=new GraphQLQuery();
@@ -47,7 +44,7 @@ public class MyTests {
                 ;
     }
 
-    @Tag("smoke")
+
     @Test
     public void testWithParameterPOJOClass(){
         GraphQLQuery query=new GraphQLQuery();
@@ -72,7 +69,7 @@ public class MyTests {
                                     .body("data.launches[0].mission_name",is(notNullValue()));
 
     }
-    @Tag("smoke")
+
     @Test
     public void testWithParameterJSONObject() throws JSONException {
         GraphQLQuery query=new GraphQLQuery();
