@@ -31,10 +31,9 @@ jobs:
 #          files: "test-results/**/*.xml"
       - name: Create a temp artifact folder;
         run: |
-          mkdir allure-report
+          sudo apt update && sudo apt -y install allure
       - name: Install allure
         run: |
-          brew update
           brew install allure
       - name: Collect Allure files and generate allure-report folder
         run: |
@@ -43,4 +42,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: allure-report
-          path: allure-report
+          path: allure-report/index.html
