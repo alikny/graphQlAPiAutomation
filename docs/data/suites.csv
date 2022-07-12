@@ -1,8 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Jul 12 16:41:23 BST 2022","Tue Jul 12 16:41:24 BST 2022","827","","com.aod.tests.MyTests","","com.aod.tests.MyTests","testWithParameterJSONObject","testWithParameterJSONObject()",""
-"passed","Tue Jul 12 16:41:24 BST 2022","Tue Jul 12 16:41:25 BST 2022","837","","com.aod.tests.MyTests","","com.aod.tests.MyTests","testWithParameterPOJOClass","testWithParameterPOJOClass()",""
-"passed","Tue Jul 12 16:41:21 BST 2022","Tue Jul 12 16:41:23 BST 2022","1878","","com.aod.tests.MyTests","","com.aod.tests.MyTests","getCompanyData_checkCeo_shouldBeElonMusk","getCompanyData_checkCeo_shouldBeElonMusk()",""
-"passed","Tue Jul 12 16:41:24 BST 2022","Tue Jul 12 16:41:24 BST 2022","411","","com.aod.tests.MyTests","","com.aod.tests.MyTests","getAShipTest","getAShipTest()",""
-"passed","Tue Jul 12 16:41:26 BST 2022","Tue Jul 12 16:41:27 BST 2022","814","","com.aod.tests.UserTests","","com.aod.tests.UserTests","insertAUser","insertAUser()",""
-"passed","Tue Jul 12 16:41:25 BST 2022","Tue Jul 12 16:41:26 BST 2022","748","","com.aod.tests.UserTests","","com.aod.tests.UserTests","updateUser","updateUser()",""
-"passed","Tue Jul 12 16:41:25 BST 2022","Tue Jul 12 16:41:25 BST 2022","443","","com.aod.tests.MyTests","","com.aod.tests.MyTests","testMutation","testMutation()",""

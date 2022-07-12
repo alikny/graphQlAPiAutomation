@@ -1,1 +1,0 @@
-{"total":2,"items":[{"uid":"bfaea0963c23938a6ac59f98233088bc","name":"com.aod.tests.MyTests","statistic":{"failed":0,"broken":0,"skipped":0,"passed":5,"unknown":0,"total":5}},{"uid":"e1ae24004ed56b5c0e88590471b1c5d9","name":"com.aod.tests.UserTests","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}
