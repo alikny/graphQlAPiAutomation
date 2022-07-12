@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           brew install allure
-        working-directory: graphQlAPiAutomation
+        working-directory: .
       - name: Create a temp artifact folder named `output`
         run: |
           mkdir output
