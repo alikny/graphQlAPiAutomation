@@ -45,12 +45,6 @@ jobs:
           name: allure-report
           path: ./allure-report
 
-      - name: Publishing Allure artifact to GitHub Actions
-        uses: actions/upload-artifact@v2
-        with:
-          name: allure-report
-          path: ./allure-report
-
       - uses: actions/checkout@v2
 
       - name: Get Allure history
@@ -78,4 +72,4 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-report
+          PUBLISH_DIR: allure-history
