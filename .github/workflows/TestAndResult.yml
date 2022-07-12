@@ -32,9 +32,13 @@ jobs:
       - name: Create a temp artifact folder;
         run: |
           mkdir allure-report
+      - name: Install allure
+        run: |
+          brew update
+          brew install allure
       - name: Collect Allure files and generate allure-report folder
         run: |
-          allure generate allure-results --clean
+          allure generate ./allure-results --clean
       - name: Publishing Allure artifact to GitHub Actions
         uses: actions/upload-artifact@v2
         with:
