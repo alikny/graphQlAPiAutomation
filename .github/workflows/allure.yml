@@ -21,15 +21,17 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
           cache: maven
-      - name: Install dependencies
-        run: |
-          brew install allure
+#      - name: Install dependencies
+#        run: |
+#          brew install allure
 
       - name: Run tests with Maven
         run: mvn clean test
 
       - name: Run PWD
-        run: pwd
+        run: | 
+          pwd
+          ls
       - name: Collect Allure files and generate allure-report folder
         run: |
           allure generate ./allure-results
