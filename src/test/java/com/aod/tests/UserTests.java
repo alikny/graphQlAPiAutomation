@@ -8,25 +8,22 @@ import com.github.javafaker.Faker;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 import org.json.JSONObject;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
-//import org.junit.Before;
-//import org.junit.Test;
-//import org.testng.annotations.BeforeMethod;
-//import org.testng.annotations.Test;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-@Tag("smoke")
+
 public class UserTests {
 
     GraphQLQuery graphQLQuery=new GraphQLQuery();
     Faker faker=new Faker();
     User newUser=new User(faker.name().firstName(),faker.name().username());
 
-    @BeforeEach
+    @BeforeMethod
     public void before(){
         baseURI= ConfigurationReader.get("EndPoint");
     }

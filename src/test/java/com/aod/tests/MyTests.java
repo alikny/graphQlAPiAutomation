@@ -9,23 +9,22 @@ import com.aod.utilities.ConfigurationReader;
 import io.restassured.http.ContentType;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
-
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
+
 public class MyTests {
+
     String Endpoint;
-    @BeforeEach
+    @BeforeTest
     public void before(){
         Endpoint= ConfigurationReader.get("EndPoint");
     }
 
-//    @Tag("smoke")
-    @org.junit.jupiter.api.Test
+    @Test
     public void getCompanyData_checkCeo_shouldBeElonMusk() {
 
         GraphQLQuery qlquery=new GraphQLQuery();
@@ -46,7 +45,6 @@ public class MyTests {
                 ;
     }
 
-    @Tag("smoke")
     @Test
     public void testWithParameterPOJOClass(){
         GraphQLQuery query=new GraphQLQuery();
@@ -78,6 +76,7 @@ public class MyTests {
         query.setQuery(Querries.query2);
 
         // set the limit variable via JSON object
+
         JSONObject variables=new JSONObject();
         variables.put("limit",10);
         query.setVariables(variables.toString());
