@@ -23,9 +23,9 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Install dependencies
-        run: |
-          brew install allure
+#      - name: Install dependencies
+#        run: |
+#          brew install allure
 
       - name: See working Directory
         run: |
