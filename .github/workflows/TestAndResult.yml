@@ -8,6 +8,8 @@ on:
     branches: [ "j-allure" ]
   pull_request:
     branches: [ "j-allure" ]
+  schedule:
+    - cron: '*/10 * * * 0-5'
 
 jobs:
   AoD-API-Automation-Tests:
