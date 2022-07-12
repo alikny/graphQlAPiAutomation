@@ -5,11 +5,9 @@ name: Api test Automation
 
 on:
   push:
-    branches: [ "j-allure" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "j-allure" ]
-  schedule:
-#    - cron: '*/10 * * * 0-5'
+    branches: [ "main" ]
 
 jobs:
   AoD-API-Automation-Tests:

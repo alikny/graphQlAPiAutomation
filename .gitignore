@@ -1,5 +1,5 @@
 /.idea/
 /target
 /allure-results/*
-/allure-report/*
+/doc/*
 /.allure/
