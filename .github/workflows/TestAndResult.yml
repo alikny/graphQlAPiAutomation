@@ -32,10 +32,6 @@ jobs:
       - name: Create a temp artifact folder;
         run: |
           mkdir allure-report
-      - name: Run Firefox tests and generate Allure folder inside `output` folder
-        run: |
-          pytest -vs tests/ --browser firefox --alluredir=allure-report
-        working-directory: .
       - name: Collect Allure files and generate allure-report folder
         run: |
           allure generate allure-results --clean
