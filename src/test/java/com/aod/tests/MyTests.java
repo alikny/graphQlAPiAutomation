@@ -19,7 +19,6 @@ import static org.hamcrest.Matchers.*;
 
 public class MyTests {
     String Endpoint;
-
     @BeforeEach
     public void before(){
         Endpoint= ConfigurationReader.get("EndPoint");

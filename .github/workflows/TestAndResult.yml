@@ -14,7 +14,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 11
@@ -25,8 +24,23 @@ jobs:
           cache: maven
       - name: Run tests with Maven
         run: mvn clean test
-      - name: Publish Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v1
-        if: always()
+#      - name: Publish Test Results
+#        uses: EnricoMi/publish-unit-test-result-action@v1
+#        if: always()
+#        with:
+#          files: "test-results/**/*.xml"
+      - name: Create a temp artifact folder;
+        run: |
+          mkdir allure-report
+      - name: Run Firefox tests and generate Allure folder inside `output` folder
+        run: |
+          pytest -vs tests/ --browser firefox --alluredir=allure-report
+        working-directory: { name of your project root here }
+      - name: Collect Allure files and generate allure-report folder
+        run: |
+          allure generate allure-results --clean
+      - name: Publishing Allure artifact to GitHub Actions
+        uses: actions/upload-artifact@v2
         with:
-          files: "test-results/**/*.xml"
+          name: allure-report
+          path: allure-report
