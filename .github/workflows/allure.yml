@@ -24,16 +24,16 @@ jobs:
       - name: Install dependencies
         run: |
           brew install allure
-        working-directory: .
-      - name: Create a temp artifact folder named `output`
-        run: |
-          mkdir output
+
       - name: Run tests with Maven
         run: mvn clean test
+
+      - name: Run PWD
+        run: pwd
       - name: Collect Allure files and generate allure-report folder
         run: |
-          pwd
           allure generate ./allure-results
+
       - name: Publishing Allure artifact to GitHub Actions
         uses: actions/upload-artifact@v2
         with:
