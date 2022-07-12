@@ -5,9 +5,9 @@ name: Api test Automation
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "junit-allure " ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "junit-allure " ]
 
 jobs:
   AoD-API-Automation-Tests:
