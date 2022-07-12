@@ -2,7 +2,7 @@ name: Api test Automation
 
 on:
   push:
-    branches: [ " allure-testng-luiz" ]
+    branches: [ "allure-testng-luiz" ]
   pull_request:
     branches: [ "main" ]
   schedule:
