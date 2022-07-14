@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jul 14 09:22:50 GMT 2022","Thu Jul 14 09:22:51 GMT 2022","370","Surefire suite","Surefire test","com.aod.tests.MyTests","com.aod.tests.MyTests","testMutation","testMutation",""
+"passed","Thu Jul 14 09:22:50 GMT 2022","Thu Jul 14 09:22:50 GMT 2022","338","Surefire suite","Surefire test","com.aod.tests.MyTests","com.aod.tests.MyTests","getCompanyData_checkCeo_shouldBeElonMusk","getCompanyData_checkCeo_shouldBeElonMusk",""
+"passed","Thu Jul 14 09:22:51 GMT 2022","Thu Jul 14 09:22:52 GMT 2022","700","Surefire suite","Surefire test","com.aod.tests.MyTests","com.aod.tests.MyTests","testWithParameterJSONObject","testWithParameterJSONObject",""
+"passed","Thu Jul 14 09:22:45 GMT 2022","Thu Jul 14 09:22:49 GMT 2022","4069","Surefire suite","Surefire test","com.aod.tests.UserTests","com.aod.tests.UserTests","insertAUser","insertAUser",""
+"passed","Thu Jul 14 09:22:52 GMT 2022","Thu Jul 14 09:22:52 GMT 2022","697","Surefire suite","Surefire test","com.aod.tests.MyTests","com.aod.tests.MyTests","testWithParameterPOJOClass","testWithParameterPOJOClass",""
+"passed","Thu Jul 14 09:22:50 GMT 2022","Thu Jul 14 09:22:50 GMT 2022","339","Surefire suite","Surefire test","com.aod.tests.MyTests","com.aod.tests.MyTests","getAShipTest","getAShipTest",""
+"passed","Thu Jul 14 09:22:49 GMT 2022","Thu Jul 14 09:22:50 GMT 2022","652","Surefire suite","Surefire test","com.aod.tests.UserTests","com.aod.tests.UserTests","updateUser","updateUser",""
