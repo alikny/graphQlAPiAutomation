@@ -8,3 +8,4 @@ to generate allure report
     allure generate ./allure-results --clean && allure open ./allure-report/index.html
 
 
+new line
